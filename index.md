@@ -87,6 +87,8 @@ the pitch.
 {% include dc/intro.html %}
 {% elsif page.carpentry == "lc" %}
 {% include lc/intro.html %}
+{% elsif page.carpentry == "pym0fm" %}
+{% include pym0fm/intro.html %}
 {% endif %}
 
 {% comment %}
@@ -101,6 +103,8 @@ workshop is only open to people from a particular institution.
 {% include dc/who.html %}
 {% elsif page.carpentry == "lc" %}
 {% include lc/who.html %}
+{% elsif page.carpentry == "pym0fm" %}
+{% include pym0fm/who.html %}
 {% endif %}
 
 {% comment %}
@@ -116,8 +120,8 @@ address.
   <strong>Where:</strong>
   {{page.address}}.
   Get directions with
-  <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
-  or
+  <!-- <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
+  or-->
   <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>.
 </p>
 {% endif %}
@@ -127,6 +131,7 @@ DATE
 
 This block displays the date and links to Google Calendar.
 {% endcomment %}
+{% comment %}
 {% if page.humandate %}
 <p id="when">
   <strong>When:</strong>
@@ -134,6 +139,7 @@ This block displays the date and links to Google Calendar.
   {% include workshop_calendar.html %}
 </p>
 {% endif %}
+{% endcomment %}
 
 {% comment %}
 SPECIAL REQUIREMENTS
@@ -141,15 +147,15 @@ SPECIAL REQUIREMENTS
 Modify the block below if there are any special requirements.
 {% endcomment %}
 <p id="requirements">
-  <strong>Requirements:</strong> Participants must bring a laptop with a
-  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on. They should have a few specific software packages installed (listed <a href="#setup">below</a>).
+  <strong>Requirements:</strong> Participants do not have to, but can if they so wish, bring their own laptop with a
+  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on. There will be some software needed to be installed (listed <a href="#setup">below</a>).
 </p>
 
 {% comment%}
 CODE OF CONDUCT
 {% endcomment %}
 <p id="code-of-conduct">
-<strong>Code of Conduct:</strong>  Everyone who participates in Carpentries activities is required to conform to the <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Code of Conduct</a>. This document also outlines how to report an incident if needed.
+<strong>Code of Conduct:</strong>  Everyone who participates in the module is required to conform to the <a href="http://student.reading.ac.uk/essentials/_the-important-stuff/student-charter.aspx">Student Charter</a>. This document also outlines how to report an incident if needed.
 </p>
 
 
@@ -160,16 +166,15 @@ Modify the block below if there are any barriers to accessibility or
 special instructions.
 {% endcomment %}
 <p id="accessibility">
-  <strong>Accessibility:</strong> We are committed to making this workshop
-  accessible to everybody.
-  The workshop organizers have checked that:
+  <strong>Accessibility:</strong> We are committed to making this module
+  accessible to everybody. Particularly,
 </p>
 <ul>
   <li>The room is wheelchair / scooter accessible.</li>
   <li>Accessible restrooms are available.</li>
 </ul>
 <p>
-  Materials will be provided in advance of the workshop and
+  Materials will be provided in advance of the seminars and
   large-print handouts are available if needed by notifying the
   organizers in advance.  If we can help making learning easier for
   you (e.g. sign-language interpreters, lactation facilities) please
@@ -218,6 +223,9 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
 {% elsif site.carpentry == "lc" %}
 <p><a href="{{ site.lc_pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
 <p><a href="{{ site.lc_post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
+{% elsif site.carpentry == "pym0fm" %}
+<p><a href="{{ site.lc_pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
+<p><a href="{{ site.lc_post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
 {% endif %}
 
 <hr/>
@@ -238,6 +246,8 @@ to match your plans.  You may also want to change 'Day 1' and 'Day
 {% include dc/schedule.html %}
 {% elsif page.carpentry == "lc" %}
 {% include lc/schedule.html %}
+{% elsif page.carpentry == "pym0fm" %}
+{% include pym0fm/schedule.html %}
 {% endif %}
 
 {% comment %}
@@ -283,6 +293,8 @@ please preview your site before committing, and make sure to run
 {% include dc/syllabus.html %}
 {% elsif page.carpentry == "lc" %}
 {% include lc/syllabus.html %}
+{% elsif page.carpentry == "pym0fm" %}
+{% include pym0fm/syllabus.html %}
 {% endif %}
 
 <hr/>
@@ -309,6 +321,8 @@ please preview your site before committing, and make sure to run
   Data Carpentry
   {% elsif page.carpentry == "lc" %}
   Library Carpentry
+  {% elsif page.carpentry == "pym0fm" %}
+  this module
   {% endif %}
   workshop,
   you will need access to the software described below.
