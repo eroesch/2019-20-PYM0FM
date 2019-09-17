@@ -7,10 +7,11 @@
 # dc: Data Carpentry
 # lc: Library Carpentry
 # cp: Carpentries (to use for instructor traning for instance)
-carpentry: "swc"
+# pym0fm: PYM0FM module
+carpentry: "pym0fm"
 
 # Overall title for pages.
-title: "Workshop Title"
+title: "PYM0FM fMRI Analasis"
 
 
 #------------------------------------------------------------
