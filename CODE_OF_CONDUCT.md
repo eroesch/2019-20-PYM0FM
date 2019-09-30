@@ -2,10 +2,11 @@
 layout: page
 title: "Contributor Code of Conduct"
 ---
-As contributors and maintainers of this project,
-we pledge to follow the [Carpentry Code of Conduct][coc].
+
+As participant to the module PYM0FM, convenor and students,
+we pledge to follow the [Student Charter][uor-coc] of the University of Reading.
 
 Instances of abusive, harassing, or otherwise unacceptable behavior
-may be reported by following our [reporting guidelines][coc-reporting].
+may be reported by following our [reporting guidelines][uor-coc-reporting].
 
 {% include links.md %}
