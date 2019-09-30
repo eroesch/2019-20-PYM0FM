@@ -2,7 +2,7 @@
 layout: page
 title: "Licenses"
 ---
-## Instructional Material
+## Istructional Material
  
 The overall architecture, design and some material taught in this module are borrowed from
 the Software Carpentry. All Software Carpentry, Data Carpentry, and Library Carpentry instructional
