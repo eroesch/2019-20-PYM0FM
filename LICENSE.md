@@ -10,7 +10,7 @@ material is made available under the [Creative Commons Attribution
 license][cc-by-human].
 
 The module also contains material borrowed from other sources, and due credit are listed below accordingly:
-* The [INCF ReproNim initiative][https://www.repronim.org/]
+* The [INCF ReproNim initiative][repronim]
 
 Some lessons contain original material developed for the module. They are released in
 the public domain under a [Creative Commons Attribution license][cc-by-human]. I welcome comments,
