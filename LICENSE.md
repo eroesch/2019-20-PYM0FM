@@ -3,7 +3,7 @@ layout: page
 title: "Licenses"
 ---
 ## Instructional Material
-
+ 
 The overall architecture, design and some material taught in this module are borrowed from
 the Software Carpentry. All Software Carpentry, Data Carpentry, and Library Carpentry instructional
 material is made available under the [Creative Commons Attribution

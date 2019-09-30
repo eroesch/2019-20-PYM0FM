@@ -1,7 +1,7 @@
-[uor-coc]: https://student.reading.ac.uk/essentials/_the-important-stuff/charter-and-contract.aspx
-[uor-coc-reporting]: https://student.reading.ac.uk/essentials/_support-and-wellbeing/never-ok.aspx
 [email]: mailto:e.b.roesch@reading.ac.uk
 [repronim]: https://www.repronim.org
+[uor-coc]: https://student.reading.ac.uk/essentials/_the-important-stuff/charter-and-contract.aspx
+[uor-coc-reporting]: https://student.reading.ac.uk/essentials/_support-and-wellbeing/never-ok.aspx
 
 [cc-by-human]: https://creativecommons.org/licenses/by/4.0/
 [cc-by-legal]: https://creativecommons.org/licenses/by/4.0/legalcode
