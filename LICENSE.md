@@ -2,9 +2,9 @@
 layout: page
 title: "Licenses"
 ---
-## Istructional Material
+## Instructional Material
  
-The overall architecture, design and some material taught in this module are borrowed from
+The overall architecture, design (including the website) and some material taught in this module are borrowed from
 the Software Carpentry. All Software Carpentry, Data Carpentry, and Library Carpentry instructional
 material is made available under the [Creative Commons Attribution
 license][cc-by-human].
@@ -35,7 +35,7 @@ Under the following terms:
 * **Attribution**---You must give appropriate credit (mentioning that
   your work is derived from work that is Copyright © Etienne Roesch,
   the Software Carpentry or otherwise stated, linking to
-  http://eroesch.github.com/2019-20-PYM0FM), provide a [link to the
+  http://eroesch.github.com/2019-20-PYM0FM, provide a [link to the
   license][cc-by-human], and indicate if changes were made. You may do
   so in any reasonable manner, but not in any way that suggests the
   licensor endorses you or your use.
