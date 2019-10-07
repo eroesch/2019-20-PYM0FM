@@ -91,6 +91,8 @@ the pitch.
 {% include pym0fm/intro.html %}
 {% endif %}
 
+<hr/>
+
 {% comment %}
 AUDIENCE
 
@@ -174,7 +176,7 @@ special instructions.
   <li>Accessible restrooms are available.</li>
 </ul>
 <p>
-  Materials will be provided in advance of the seminars and
+  Materials will be provided as much in advance of the seminars as possible, and
   large-print handouts are available if needed by notifying the
   organizers in advance.  If we can help making learning easier for
   you (e.g. sign-language interpreters, lactation facilities) please
@@ -225,7 +227,14 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
 <p><a href="{{ site.lc_post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
 {% elsif site.carpentry == "pym0fm" %}
 <p><a href="{{ site.pym0fm_pre_survey }}">Pre-Module Survey</a></p>
+{% endif %}
+
+
+{% if site.pym0fm_post_survey == "" %}
 <p><a href="{{ site.pym0fm_post_survey }}">Post-Module Survey</a></p>
+{% else %}
+Post-Module Survey (to be released soon)
+
 {% endif %}
 
 <hr/>
@@ -260,11 +269,6 @@ http://pad.carpentries.org/YYYY-MM-DD-site
 where 'YYYY-MM-DD-site' is the identifier for your workshop,
 e.g., '2015-06-10-esu'.
 {% endcomment %}
-{% if page.collaborative_notes %}
-<p id="collaborative_notes">
-  We will use this <a href="{{page.collaborative_notes}}">collaborative document</a> for chatting, taking notes, and sharing URLs and bits of code.
-</p>
-{% endif %}
 
 <hr/>
 
@@ -314,25 +318,21 @@ please preview your site before committing, and make sure to run
 <h2 id="setup">Setup</h2>
 
 <p>
-  To participate in a
-  {% if page.carpentry == "swc" %}
-  Software Carpentry
-  {% elsif page.carpentry == "dc" %}
-  Data Carpentry
-  {% elsif page.carpentry == "lc" %}
-  Library Carpentry
-  {% elsif page.carpentry == "pym0fm" %}
-  this module
-  {% endif %}
-  workshop,
-  you will need access to the software described below.
-  In addition, you will need an up-to-date web browser.
+  We typically use the CINN Nutanix Virtual Machines, which is a shared high-performance computing resource. All the software you will need to use is installed on a dedicated virtual machine, which you will be shown on the first day. (I will never that enough, <em>when you are done using a virtual machine, delete its application!)</em>
+  <p>It is possible to follow the module without using the CINN Nutanix Virtual Machines, e.g. on your own computer, but it is not recommended. You will need the software below, and an up-to-date web browser.</p>
 </p>
 <p>
-  We maintain a list of common issues that occur during installation as a reference for instructors
-  that may be useful on the
-  <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
+  We maintain a community wiki on the channel named "Lab - Computational", of the <a href="https://teams.microsoft.com/_#/?lm=deeplink&lmsrc=officeWaffle">CINN Teams Community</a>, and very much welcome contributions! Teams is an online community for all 90 researchers and students working in the <a href="http://www.reading.ac.uk/cinn/">Centre for Integrative Neuroscience and Neurodynamics</a>.
 </p>
+
+{% if page.collaborative_notes %}
+<p id="collaborative_notes">
+  Although Teams allows you to communicate with one another, for the purpose of this module,
+  we will use this <a href="{{page.collaborative_notes}}">collaborative document</a> for chatting, taking notes, and sharing URLs and bits of code that are relevant to the module.
+</p>
+{% endif %}
+
+
 
 <div id="shell"> {% comment %} Start of 'shell' section. {% endcomment %}
   <h3>The Bash Shell</h3>
@@ -343,9 +343,9 @@ please preview your site before committing, and make sure to run
 
   <div>
     <ul class="nav nav-tabs nav-justified" role="tablist">
+      <li role="presentation"><a data-os="linux" href="#shell-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux / CINN Nutanix Virtual Machine (Ubuntu 18.04)</a></li>
       <li role="presentation" class="active"><a data-os="windows" href="#shell-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
       <li role="presentation"><a data-os="macos" href="#shell-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
-      <li role="presentation"><a data-os="linux" href="#shell-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
     </ul>
 
     <div class="tab-content">
@@ -419,7 +419,7 @@ please preview your site before committing, and make sure to run
           (found in
           <code>/Applications/Utilities</code>).
           See the Git installation <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">video tutorial</a>
-          for an example on how to open the Terminal.
+          for an example on how to open the Terminal. (I personally like to use <a href="https://www.iterm2.com/">iTerm2</a> instead).
           You may want to keep
           Terminal in your dock for this workshop.
         </p>
@@ -459,9 +459,9 @@ please preview your site before committing, and make sure to run
 
   <div>
     <ul class="nav nav-tabs nav-justified" role="tablist">
+      <li role="presentation"><a data-os="linux" href="#git-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux / CINN Nutanix Virtual Machines (Ubuntu 18.04)</a></li>
       <li role="presentation" class="active"><a data-os="windows" href="#git-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
       <li role="presentation"><a data-os="macos" href="#git-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
-      <li role="presentation"><a data-os="linux" href="#git-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
     </ul>
 
     <div class="tab-content">
@@ -489,6 +489,7 @@ please preview your site before committing, and make sure to run
       </article>
       <article role="tabpanel" class="tab-pane active" id="git-linux">
         <p>
+          Git is installed on the CINN Nutanix Virtual Machines.
           If Git is not already available on your machine you can try to
           install it via your distro's package manager. For Debian/Ubuntu run
           <code>sudo apt-get install git</code> and for Fedora run
@@ -662,6 +663,7 @@ please preview your site before committing, and make sure to run
   {% endcomment %}
 </div> {% comment %} End of 'Python' section. {% endcomment %}
 
+{% comment %}
 <div id="r"> {% comment %} Start of 'R' section. {% endcomment %}
   <h3>R</h3>
 
@@ -717,6 +719,10 @@ please preview your site before committing, and make sure to run
     </div>
   </div>
 </div> {% comment %} End of 'R' section. {% endcomment %}
+
+{% endcomment %}
+
+{% comment %}
 
 <div id="sql"> {% comment %} Start of 'SQLite' section. {% endcomment %}
   <h3>SQLite</h3>
@@ -850,6 +856,8 @@ please preview your site before committing, and make sure to run
     </div>
   </div>
 </div> {% comment %} End of 'OpenRefine' section. {% endcomment %}
+
+{%  endcomment %}
 
 {% comment %}
 <div id="vm">
