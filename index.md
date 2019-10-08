@@ -150,7 +150,7 @@ Modify the block below if there are any special requirements.
 {% endcomment %}
 <p id="requirements">
   <strong>Requirements:</strong> Participants do not have to, but can if they so wish, bring their own laptop with a
-  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on. There will be some software needed to be installed (listed <a href="#setup">below</a>).
+  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on. There will be some software needed to be installed (listed <a href="#setup">below</a>). Alternatively, we recommend that you use the CINN Nutanix Virtual Machines platform that will allow you to create virtual machines on-demand, which will have been configured to do your work.
 </p>
 
 {% comment%}
