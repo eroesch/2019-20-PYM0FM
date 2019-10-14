@@ -517,9 +517,9 @@ please preview your site before committing, and make sure to run
 
   <div>
     <ul class="nav nav-tabs nav-justified" role="tablist">
+      <li role="presentation"><a data-os="linux" href="#editor-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux / CINN Nutanix Virtual Machine (Ubuntu 18.04)</a></li>
       <li role="presentation" class="active"><a data-os="windows" href="#editor-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
       <li role="presentation"><a data-os="macos" href="#editor-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
-      <li role="presentation"><a data-os="linux" href="#editor-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
     </ul>
 
     <div class="tab-content">
@@ -556,7 +556,7 @@ please preview your site before committing, and make sure to run
           It should be pre-installed.
         </p>
         <p>
-          Others editors that you can use are
+          Other editors exists, like the below, but are not installed on the VM
           <a href="https://wiki.gnome.org/Apps/Gedit">Gedit</a>,
           <a href="https://kate-editor.org/">Kate</a> or
           <a href="https://www.sublimetext.com/">Sublime Text</a>.
@@ -575,8 +575,9 @@ please preview your site before committing, and make sure to run
   <p>
     <a href="https://python.org">Python</a> is a popular language for
     research computing, and great for general-purpose programming as
-    well.  Installing all of its research packages individually can be
-    a bit difficult, so we recommend
+    well. It comes pre-installed on the CINN Nutanix VM platform.
+    If you want to install it yourself, alongside all of its research packages,
+    we recommend to use
     <a href="https://www.anaconda.com/distribution/">Anaconda</a>,
     an all-in-one installer.
   </p>
@@ -587,6 +588,7 @@ please preview your site before committing, and make sure to run
     (e.g., 3.6 is fine).
   </p>
 
+<!--
   <p>
     We will teach Python using the <a href="https://jupyter.org/">Jupyter notebook</a>,
     a programming environment that runs in a web browser. For this to work you will need a reasonably
@@ -596,12 +598,13 @@ please preview your site before committing, and make sure to run
     (some older browsers, including Internet Explorer version 9
     and below, are not).
   </p>
+-->
 
   <div>
     <ul class="nav nav-tabs nav-justified" role="tablist">
+      <li role="presentation"><a data-os="linux" href="#python-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux / CINN Nutanix Virtual Machine (Ubuntu 18.04)</a></li>
       <li role="presentation" class="active"><a data-os="windows" href="#python-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
       <li role="presentation"><a data-os="macos" href="#python-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
-      <li role="presentation"><a data-os="linux" href="#python-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
     </ul>
 
     <div class="tab-content">
@@ -623,6 +626,7 @@ please preview your site before committing, and make sure to run
       </article>
       <article role="tabpanel" class="tab-pane active" id="python-linux">
         <ol>
+          Python is already installed on the CINN Nutanix VM platform, but if you need to install it on your own laptop:
           <li>Open <a href="https://www.anaconda.com/download/#linux">https://www.anaconda.com/download/#linux</a> with your web browser.</li>
           <li>Download the Python 3 installer for Linux.<br>
             (The installation requires using the shell. If you aren't
