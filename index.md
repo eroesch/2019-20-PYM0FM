@@ -501,6 +501,7 @@ please preview your site before committing, and make sure to run
     </div>
   </div>
 </div>
+{% endcomment %}
 
 <div id="editor"> {% comment %} Start of 'editor' section. {% endcomment %}
   <h3>Text Editor</h3>
